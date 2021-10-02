@@ -4,9 +4,6 @@
 @section('title',  'About Me')
 
 @section('navbar')
-    @parent
-
-@stop
 
 @section('content')
 
