@@ -25,8 +25,8 @@
                 margin-right: 40;
             }
             .navbarList a{
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 16pt;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 12pt;
                 padding: 16;
                 color: rgb(40, 40, 40);
                 text-decoration: inherit;
