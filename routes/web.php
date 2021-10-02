@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/crosser', function () {
     return view('crosser');
 });
+
+Route::get('/weather', function () {
+    return view('weather.weather');
+});

@@ -39,8 +39,11 @@
             <div class="navbarContainer">
                 <ul class="navbarList">
                     <a href="/">About Me</a>
-                    <a href="/">Projects</a>
-                    <a href="/">Contact</a>
+                    <?php 
+                        //<a href="/">Projects</a>
+                        //<a href="/">Contact</a> 
+                    ?>
+                    <a href="/weather">Weather</a>
                     <a href="/crosser">Crosser</a>
                 </ul>
             </div>
