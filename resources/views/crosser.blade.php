@@ -1,6 +1,6 @@
 @extends('layouts._layout')
 
-@section('title',  'About Me')
+@section('title',  'Crosser')
 @section('head')
 
 @stop
