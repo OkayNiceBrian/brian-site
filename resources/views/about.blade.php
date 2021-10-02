@@ -2,6 +2,11 @@
 @extends('layouts._layout')
 
 @section('title',  'About Me')
+@section('about')
+    <script>
+        
+    </script>
+@stop()
 
 @section('navbar')
 
