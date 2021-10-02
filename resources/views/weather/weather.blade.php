@@ -27,7 +27,7 @@
             $request = 'https://weatherapi-com.p.rapidapi.com/current.json';
             $response = Http::withHeaders([
                 'x-rapidapi-host' => 'weatherapi-com.p.rapidapi.com',
-                'x-rapidapi-key' => '2524175bbamsh2002a113a5df29dp10ff1cjsn316f790ff288'
+                'x-rapidapi-key' => RAPID_API_KEY,
             ])->get($request, [
                 'q' => $zip,
             ]);
