@@ -21,13 +21,15 @@
     <?php
         use Illuminate\Support\Facades\Http;
 
+        $weatherData;
+
         if (isset($_GET["zip"])) {
             $zip = $_GET["zip"];
 
             $request = 'https://weatherapi-com.p.rapidapi.com/current.json';
             $response = Http::withHeaders([
                 'x-rapidapi-host' => 'weatherapi-com.p.rapidapi.com',
-                'x-rapidapi-key' => RAPID_API_KEY,
+                'x-rapidapi-key' => env('RAPID_API_KEY'),
             ])->get($request, [
                 'q' => $zip,
             ]);
@@ -36,20 +38,16 @@
                 echo "Invalid Zip Code.";
             } else {
                 $weatherData = $response->json();
-                displayWeatherData($weatherData);
+                echo $weatherData["location"]["name"];
             }
         }
-
-        function displayWeatherData($weatherData) {
-            echo "
-            
-                <div>
-                    <h2> </h2>
-                </div>
-
-            ";
-        }
     ?>
+
+    @isset($weatherData)
+        <div>
+            <h3></h3>
+        </div>
+    @endisset
 
     <div>
     </div>
