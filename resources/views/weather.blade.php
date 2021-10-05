@@ -5,54 +5,26 @@
 @section('title',  'Weather')
 @section('head')
     <style>
-        /* .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: 0;
+        .container {
         }
         .dataContainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            width: 450;
-            background-color: lavender;
-            border-width: 20;
-            border-color: cadetblue;
         }
         .dateTime {
-            display: flex;
-            flex-direction: row;
         }
         .iconAndTemp {
             display: flex;
             flex-direction: row-reverse;
-            justify-content: center;
+            justify-content: flex-end;
+            align-items: center;
             padding-top: 0;
             margin-top: 0;
         }
         .iconAndText {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-right: 40;
-            color: darkgrey;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         .titleText {
-            font-size: 24pt;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         .zipForm {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            padding-top: 20;
-        } */
+        }
     </style>
 @stop()
 
@@ -97,19 +69,19 @@
                 $windMph = "Wind: " . $weatherData["current"]["wind_mph"] . " m/h ";
             ?>
             <div class="dataContainer">
-                <h3 style="margin-bottom: 0">{{ $cityState }}</h3>
+                <h3>{{ $cityState }}</h3>
                 <div class="dateTime">
-                    <h4 style="padding-right: 15">{{ $month . "/" . $day . "/" . $year }}</h3>
+                    <h4>{{ $month . "/" . $day . "/" . $year }}</h3>
                     <h4>{{ $time }}</h3>
                 </div>
                 <div class="iconAndTemp">
-                    <p style="font-size: 30pt; margin-top: 12;">{{ $temperatureF }}</h1>
+                    <p style="font-size: 30pt; margin-left: 30;">{{ $temperatureF }}</h1>
                     <div class="iconAndText">
                         <img src="{{ $weatherData["current"]["condition"]["icon"] }}" alt="Weather Icon">
-                        <p style="margin-top: 0">{{ $weatherData["current"]["condition"]["text"] }}</p>
+                        <p>{{ $weatherData["current"]["condition"]["text"] }}</p>
                     </div>
                 </div>
-                <p style="margin-top: 5;">{{ $windMph }}</p>
+                <p>{{ $windMph }}</p>
             </div>
         @endisset
     
