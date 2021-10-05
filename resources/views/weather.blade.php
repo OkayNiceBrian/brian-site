@@ -20,6 +20,10 @@
             margin-top: 0;
         }
         .iconAndText {
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
         }
         .titleText {
         }
