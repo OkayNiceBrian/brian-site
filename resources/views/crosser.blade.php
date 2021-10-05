@@ -3,7 +3,7 @@
 @section('title',  'Crosser')
 @section('head')
     <style>
-        .container {
+        /* .container {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -12,7 +12,7 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 30pt;
             margin-top: 0;
-        }
+        } */
     </style>
 @stop
 
@@ -21,8 +21,8 @@
 @section('content')
 
     <div class="container">
-        <p>Crosser</p>
-        <iframe src="https://preview.p5js.org/OkayNiceBrian/embed/P3dDM8PnN" height ="450" width="450"></iframe>
+        <h1>Crosser</p>
+        <iframe src="https://preview.p5js.org/OkayNiceBrian/embed/P3dDM8PnN" height ="454" width="454"></iframe>
     </div>
 
 @stop

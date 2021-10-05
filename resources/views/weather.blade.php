@@ -5,7 +5,7 @@
 @section('title',  'Weather')
 @section('head')
     <style>
-        .container {
+        /* .container {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -52,7 +52,7 @@
         .zipForm {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             padding-top: 20;
-        }
+        } */
     </style>
 @stop()
 
@@ -97,19 +97,19 @@
                 $windMph = "Wind: " . $weatherData["current"]["wind_mph"] . " m/h ";
             ?>
             <div class="dataContainer">
-                <h3 style="margin-bottom: 0"><?php echo $cityState; ?></h3>
+                <h3 style="margin-bottom: 0">{{ $cityState }}</h3>
                 <div class="dateTime">
-                    <h4 style="padding-right: 15"><?php echo $month . "/" . $day . "/" . $year; ?></h3>
-                    <h4><?php echo $time; ?></h3>
+                    <h4 style="padding-right: 15">{{ $month . "/" . $day . "/" . $year }}</h3>
+                    <h4>{{ $time }}</h3>
                 </div>
                 <div class="iconAndTemp">
-                    <p style="font-size: 30pt; margin-top: 12;"><?php echo $temperatureF; ?></h1>
+                    <p style="font-size: 30pt; margin-top: 12;">{{ $temperatureF }}</h1>
                     <div class="iconAndText">
-                        <img src="<?php echo $weatherData["current"]["condition"]["icon"] ?>" alt="Weather Icon">
-                        <p style="margin-top: 0"><?php echo $weatherData["current"]["condition"]["text"]; ?></p>
+                        <img src="{{ $weatherData["current"]["condition"]["icon"] }}" alt="Weather Icon">
+                        <p style="margin-top: 0">{{ $weatherData["current"]["condition"]["text"] }}</p>
                     </div>
                 </div>
-                <p style="margin-top: 5;"><?php echo $windMph; ?></p>
+                <p style="margin-top: 5;">{{ $windMph }}</p>
             </div>
         @endisset
     

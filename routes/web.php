@@ -22,7 +22,7 @@ Route::get('/crosser', function () {
 });
 
 Route::get('/weather', function () {
-    return view('weather.weather');
+    return view('weather');
 });
 
 Auth::routes();
