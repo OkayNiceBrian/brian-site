@@ -1,5 +1,3 @@
-
-
 @extends('layouts._layout')
 
 @section('title',  'Weather')
@@ -11,7 +9,7 @@
         }
         .dateTime {
         }
-        .iconAndTemp {
+        .icon-temp {
             display: flex;
             flex-direction: row-reverse;
             justify-content: flex-end;
@@ -19,7 +17,7 @@
             padding-top: 0;
             margin-top: 0;
         }
-        .iconAndText {
+        .icon-text {
             display:flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -78,9 +76,9 @@
                     <h4>{{ $month . "/" . $day . "/" . $year }}</h3>
                     <h4>{{ $time }}</h3>
                 </div>
-                <div class="iconAndTemp">
+                <div class="icon-temp">
                     <p style="font-size: 30pt; margin-left: 30;">{{ $temperatureF }}</h1>
-                    <div class="iconAndText">
+                    <div class="icon-text">
                         <img src="{{ $weatherData["current"]["condition"]["icon"] }}" alt="Weather Icon">
                         <p>{{ $weatherData["current"]["condition"]["text"] }}</p>
                     </div>
