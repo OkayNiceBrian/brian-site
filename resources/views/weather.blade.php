@@ -13,7 +13,7 @@
             display: flex;
             flex-direction: row-reverse;
             justify-content: flex-end;
-            align-items: center;
+            align-items: flex-end;
             padding-top: 0;
             margin-top: 0;
         }

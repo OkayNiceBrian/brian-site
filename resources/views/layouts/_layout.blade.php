@@ -51,6 +51,7 @@
                     ?>
                     <a href="/weather">Weather</a>
                     <a href="/crosser">Crosser</a>
+                    <a href="/go">Go</a>
                 </ul>
             </div>
         @show
