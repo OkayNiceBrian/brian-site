@@ -2,14 +2,10 @@
 
 @section('title',  'Go')
 @section('head')
-    <script src="../../dist/game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
 @stop()
 
 @section('navbar')
 
 @section('content')
-<script src="../../dist/game.js"></script>
-<div>
-    
-</div>
 @stop()
